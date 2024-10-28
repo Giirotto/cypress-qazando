@@ -20,6 +20,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
+      # passo para instalar as dependências
+      - name: Install dependencies
+        run: npm install
+
       # config e execução dos testes
       - name: Run Cypress tests
         uses: cypress-io/github-action@v5
