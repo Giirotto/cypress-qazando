@@ -24,4 +24,4 @@ build/
 *.swo
 
 # Cache do Cypress
-cypress/cache/
+cypress/cache/soles
