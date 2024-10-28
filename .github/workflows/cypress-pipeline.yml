@@ -1,0 +1,29 @@
+# nome da pipeline
+name: Cypress Tests
+
+# quando a pipeline deve ser executada
+on:
+  push:
+    branches: ["master"]
+  pull_request:
+    branches: ["master"]
+
+# jobs que a pipeline deve executar
+jobs:
+  cypress-run:
+    # máquina onde a pipeline será executada
+    runs-on: ubuntu-latest
+
+    # passos que a pipeline deve executar
+    steps:
+      # passo para clonar o repositório
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      # config e execução dos testes
+      - name: Run Cypress tests
+        uses: cypress-io/github-action@v5
+        with:
+          record: true
+        env:
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
