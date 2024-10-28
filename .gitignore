@@ -3,11 +3,11 @@ node_modules
 package-lock.json
 videos/
 screenshots/
-cypress-qazando.iml
 reports/
+cypress-qazando.iml
 
 # Arquivos de configuração da IDE
-.idea/
+.idea
 .vscode/
 *.iml
 
