@@ -1,0 +1,26 @@
+# Arquivos e diretórios de dependências e configuração do projeto
+node_modules
+package-lock.json
+videos/
+screenshots/
+cypress-qazando.iml
+
+# Arquivos de configuração da IDE
+.idea/
+.vscode/
+*.iml
+
+# Diretórios de build
+dist/
+build/
+
+# Arquivos de log
+*.log
+
+# Arquivos temporários
+*.tmp
+*.swp
+*.swo
+
+# Cache do Cypress
+cypress/cache/
