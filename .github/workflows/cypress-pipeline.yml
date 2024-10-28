@@ -18,7 +18,7 @@ jobs:
     steps:
       # passo para clonar o repositório
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       # passo para instalar as dependências
       - name: Install dependencies
@@ -31,3 +31,10 @@ jobs:
           record: true
         env:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+
+      # upload relatorio de testes
+      - name: Upload test results
+        uses: actions/upload-artifact@v4
+        with:
+          name: cypress-report
+          path: cypress/reports/html
