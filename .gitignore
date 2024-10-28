@@ -4,6 +4,7 @@ package-lock.json
 videos/
 screenshots/
 cypress-qazando.iml
+reports/
 
 # Arquivos de configuração da IDE
 .idea/
